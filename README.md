@@ -1,7 +1,7 @@
 phpgraph
 ========
 
-Extracts the linked PHP files from a PHP project and creates a JSON file suitable for use with d3js. 
+Extracts the linked PHP files from a PHP project and creates a JSON file suitable for use with [d3js](http://d3js.org/).
 
 Outputs graph data as JSON, suitable for use by d3js [as seen in this example](http://bl.ocks.org/mbostock/4062045).
 
