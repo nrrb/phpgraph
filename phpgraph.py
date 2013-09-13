@@ -60,6 +60,7 @@ def write_edges_to_json(edges, output_path):
     dg = networkx.DiGraph()
     dg.add_edges_from(edges)
     data = json_graph.node_link_data(dg)
+    # d3js apparently doesn't like JSON files with single quotes
     json_data = json.dumps(data, indent=4).replace('\'', '"')
     with open(output_path, 'wb') as f:
         f.write(json_data)
